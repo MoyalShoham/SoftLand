@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברוכים הבאים</title>
+    <style media="screen">
+      body{
+        font-family: 'Sono', cursive;
+        font-size: 1.1em;
+        color: white;
+        background-color :#a5b4bb;
+        text-align: center;
+        background-repeat: space;
+        margin: 0px;
+      }
+      input {
+        width: 80%;
+      }
+      p{
+        padding-top: 0%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 0%;
+      }
+      #sub{
+        background-color: #000000;
+        height:30px;
+        width: 120px;
+        margin:1px;
+        margin-top: 4px;
+        font-size:1.2em;
+        border-radius: 25px;
+        color: white;
+      }
+      .fillDetails{
+        background-image: url("logo.jpg");
+
+        background-size:300px;
+        background-position:bottom;
+        background-repeat: no-repeat;
+        background-clip: content-box;
+        height: 500px;
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" align='center'>
+      <div class="fillDetails" align='center'>
+        <h1>אנא השאירו פרטים ואחזור אליכם בהקדם</h1>
+        <form action="https://formspree.io/ShohamShohamMoyal@walla.com" method="POST">
+          <label for="firstName"></label>
+          <input type="text" name="firstName" placeholder="שם פרטי" required="">
+          <label for="lastName"><p></p></label>
+          <input type="text" name="lastName" placeholder="שם משפחה" required="">
+          <label for="phone"><p></p></label>
+          <input type="phone" name="phone" placeholder="מספר טלפון" required="">
+          <p></p>
+          <form action="thank_you.html" method="get">
+            <div class="sub">
+              <input id="sub" type="submit" name="submit btn" value="הרשמה" onclick="sendEmail()">
+            </div>
+          </form>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
