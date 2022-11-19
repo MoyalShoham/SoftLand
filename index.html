@@ -43,6 +43,18 @@
         height: 500px;
         width: 350px;
       }
+      input[id='det']{
+        border: 1px solid blue;
+        border-radius: 25px 25px 25px 25px;
+        position: relative;
+        padding: 0 25px;
+        height: 25px;
+      }
+      
+      input[type="submit"]:hover{
+        background: #ff5722;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -51,11 +63,11 @@
         <h1>אנא השאירו פרטים ואחזור אליכם בהקדם</h1>
         <form action="https://formspree.io/f/xwkzyajd" method="POST">
           <label for="firstName"></label>
-          <input type="text" name="firstName" placeholder="שם פרטי" required="">
+          <input type="text" id = "det" name="firstName" placeholder="שם פרטי" required="">
           <label for="lastName"><p></p></label>
-          <input type="text" name="lastName" placeholder="שם משפחה" required="">
+          <input type="text" id = "det" name="lastName" placeholder="שם משפחה" required="">
           <label for="phone"><p></p></label>
-          <input type="phone" name="phone" placeholder="מספר טלפון" required="">
+          <input type="phone" id = "det" name="phone" placeholder="מספר טלפון" required="">
           <p></p>
           <form action="https://github.com/MoyalShoham/SoftLand/blob/main/ThankYouPage.html" method="get">
             <div class="sub">
